@@ -150,6 +150,12 @@ bash build.sh --nlohmann_path ${JSON头文件所在目录的绝对路径}
 bash build.sh --nlohmann_path /home/nlohmann_json/include
 ```
 
+如果使用Dockerfile构建的环境，编译命令为：
+
+```shell
+bash build.sh
+```
+
 编译完成后会在output目录下生成`CANN-hccl_alg-<version>-linux.<arch>.run`软件包。
 
 \<version>表示软件版本号，\<arch>表示操作系统架构，取值包括x86_64与aarch64。

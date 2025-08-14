@@ -35,6 +35,10 @@ if (CMAKE_INSTALL_PREFIX STREQUAL /usr/local)
     set(CMAKE_INSTALL_PREFIX     "${CMAKE_CURRENT_SOURCE_DIR}/output"  CACHE STRING "path for install()" FORCE)
 endif ()
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 set(HI_PYTHON                     "python3"                       CACHE   STRING   "python executor")
 set(PRODUCT_SIDE                  host)
 set(INSTALL_LIBRARY_DIR packages/${CMAKE_SYSTEM_PROCESSOR}-linux/lib64)

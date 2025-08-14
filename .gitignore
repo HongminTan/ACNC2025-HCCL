@@ -1,0 +1,38 @@
+# Build directories
+build/
+output/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Makefile
+
+# Compiled Object files
+*.o
+*.so
+*.a
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

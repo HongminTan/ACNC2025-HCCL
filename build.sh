@@ -137,6 +137,16 @@ fi
 
 if [ -n "${third_party_nlohmann_path}" ];then
     CUSTOM_OPTION="${CUSTOM_OPTION} -DTHIRD_PARTY_NLOHMANN_PATH=${third_party_nlohmann_path}"
+else
+    # Use default nlohmann_json path if not specified
+    DEFAULT_NLOHMANN_PATH="/opt/nlohmann_json/include"
+    if [ -d "${DEFAULT_NLOHMANN_PATH}" ];then
+        CUSTOM_OPTION="${CUSTOM_OPTION} -DTHIRD_PARTY_NLOHMANN_PATH=${DEFAULT_NLOHMANN_PATH}"
+        log "Info: Using default nlohmann_json path: ${DEFAULT_NLOHMANN_PATH}"
+    else
+        log "Error: nlohmann_json not found. Please install it or specify path with --nlohmann_path."
+        exit 1
+    fi
 fi
 
 CUSTOM_OPTION="${CUSTOM_OPTION} -DCUSTOM_ASCEND_CANN_PACKAGE_PATH=${ASCEND_CANN_PACKAGE_PATH}"
