@@ -24,6 +24,7 @@ RUN apt-get update && \
             gdb \
             nano \
             unzip \
+            zip \
             clang-format \
             python3 \
             python3-pip && \
