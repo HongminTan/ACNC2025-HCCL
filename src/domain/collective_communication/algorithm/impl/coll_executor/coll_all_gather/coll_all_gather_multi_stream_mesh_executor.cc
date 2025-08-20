@@ -145,8 +145,7 @@ HcclResult CollAllGatherMultiStreamMeshExecutor::KernelRun(const OpParam &param,
     //     HCCL_INFO("allgather mesh: using halving-doubling algo inter-server.");
     // }
     level1TempAlg = AlgTemplateRegistry::Instance().GetAlgTemplate(
-                //TemplateType::TEMPLATE_ALL_GATHER_RECURSIVE_HALVING_DOUBLING, dispatcher_);
-                TemplateType::TEMPLATE_ALL_GATHER_RING, dispatcher_);
+                TemplateType::TEMPLATE_ALL_GATHER_RECURSIVE_HALVING_DOUBLING, dispatcher_);
 
     CHK_SMART_PTR_NULL(level1TempAlg);
 
