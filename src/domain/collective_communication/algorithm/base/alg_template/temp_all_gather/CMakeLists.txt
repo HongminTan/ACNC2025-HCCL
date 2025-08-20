@@ -22,6 +22,7 @@ set(src_list_pub
     ${CMAKE_CURRENT_SOURCE_DIR}/all_gather_sio_hccs.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/all_gather_single_stream_mesh.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/all_gather_multi_stream_mesh.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/all_gather_sio_mesh_hybrid.cc
 )
 
 target_sources(hccl_alg PRIVATE

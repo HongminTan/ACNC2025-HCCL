@@ -23,6 +23,7 @@ set(src_list
   ${CMAKE_CURRENT_SOURCE_DIR}/coll_all_gather_mesh_graph_pipeline_executor.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/coll_all_gather_single_stream_mesh_executor.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/coll_all_gather_multi_stream_mesh_executor.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/coll_all_gather_sio_mesh_hybrid_executor.cc
 )
 
 target_sources(hccl_alg PRIVATE
