@@ -36,7 +36,8 @@ AllGatherOperator::~AllGatherOperator()
 HcclResult AllGatherOperator::SelectAlg(const std::string& tag, const OpParam& param, std::string& algName,
                                         std::string& newTag)
 {
-    algName = "AllGatherSingleStreamMeshExecutor";
+    // algName = "AllGatherSingleStreamMeshExecutor";
+    algName = "AllGatherMultiStreamMeshExecutor";
     return HCCL_SUCCESS;
     if (userRankSize_ == 1 && (workflowMode_ == HcclWorkflowMode::HCCL_WORKFLOW_MODE_OP_BASE)) {
         algName = "AllGatherSingleExecutor";

@@ -161,6 +161,7 @@ enum TemplateType {
     TEMPLATE_REDUCESCATTER_PLANT_LOCAL_REDUCE = 95, // ReduceScatterPlantLocalReduce RS规约保序单机
     TEMPLATE_REDUCESCATTER_PLANT_LOCAL_REDUCE_COMBINE = 96, // ReduceScatterPlantLocalReduceCombine RS规约保序跨机
     TEMPLATE_ALL_GATHER_SINGLE_STREAM_MESH = 100,
+    TEMPLATE_ALL_GATHER_MULTI_STREAM_MESH = 101,
 
     TEMPLATE_NATIVE_MAX_NUM,                        // 内置template最大值
 
